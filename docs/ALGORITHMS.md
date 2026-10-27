@@ -1,6 +1,6 @@
 # Algorithms and Design Decisions
 
-This document describes code present in the selected Version A Fix12 controller. “Implemented” means source code exists; “enabled” means the audited constants select that path; neither term alone implies successful validation.
+This document describes the controller published in this repository (identifier: `Task22N_Fix12_global_frontier_execution_handoff`). “Implemented” means source code exists; “enabled” means the documented configuration selects that path; neither term alone implies successful validation.
 
 ## Localization
 

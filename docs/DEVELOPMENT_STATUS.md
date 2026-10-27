@@ -1,8 +1,8 @@
 # Development Status
 
-## Current publication source
+## Current controller revision
 
-The current Version A publication candidate is the Maze 1 working controller:
+The published controller originated from the Maze 1 development implementation:
 
 | Field | Value |
 |---|---|
@@ -11,12 +11,12 @@ The current Version A publication candidate is the Maze 1 working controller:
 | Lines at audit | 31,139 |
 | SHA-256 at audit | `79bcf4f34876383a0145a4d4975eb582f38a296c4f425af764c9da24b56e8aa7` |
 | Evaluated world | Private academic Maze 1 world; not included in the public snapshot |
-| Git relationship | Uncommitted successor to HEAD `e5958a1` (`Task22M`, 27,216 lines) |
+| Development history | Originally an uncommitted successor to private archive commit `e5958a1` (`Task22M`, 27,216 lines); the public repository has a separate initial commit |
 | Status | Under Refinement |
 
-This selection is based on the active development-world linkage and controller lineage, not filename recency alone. The private Maze 1 world declares `controller "my_controller"`, and the Fix12 file is the latest active Version A continuation with a recorded run. It is selected for transparent publication of current work, not because it is the most successful revision.
+The controller was selected from the independently developed Maze 1 lineage because the private development world uses `controller "my_controller"` and the Fix12 revision has recorded run evidence. This is the current public source, not a claim that Fix12 was the most successful historical revision.
 
-The public copy must retain the same bytes and hash at export time. Any later source change requires updating this table and treating the result as a new audited snapshot.
+The recorded hash identifies the source at initial publication. If the controller changes, update its revision and evidence records rather than applying historical Fix12 observations to new code.
 
 ## Audited development environment
 
@@ -31,17 +31,17 @@ The public copy must retain the same bytes and hash at export time. Any later so
 
 These are observed development versions, not a formally tested compatibility range.
 
-## Related Version A snapshots
+## Historical development snapshots
 
 | Source | Identifier/evidence | Relationship | Publication interpretation |
 |---|---|---|---|
 | `my_controller (copy).py` | Task18 Fix2; 12,332 lines; SHA-256 `1c27692a…` | Frozen unchanged since commit `6513f39`; not selected by the world | Backup/reference only, not current. |
 | Commit `ffa4a11` | Task18 Fix7; 14,365 lines | Commit labelled `First Success`; corresponding Maze 3 run reached both targets | Historical successful revision, not Fix12 validation. |
-| Commit `e5958a1` | Task22M; 27,216 lines | Current repository HEAD and predecessor of working Fix12 | Reproducible Git checkpoint, but not the newest working file. |
+| Private archive commit `e5958a1` | Task22M; 27,216 lines | Predecessor of Fix12 in the private development archive | Historical Git checkpoint, not the public repository HEAD. |
 | Maze 1 Task22N/Fix5 run | `run_20260710_182926` | Later uncommitted development run; both targets recorded reached | Historical experiment only. |
 | Maze 1 Fix12 run | `run_20260710_220612` | Run produced by the selected identifier | Current evidence; neither target recorded reached. |
 
-Root-level `progressed.py` is Task16W (10,291 lines), and `old_code.py`/`my_controller_stable_backup.py` represent earlier mapping-era code. They are development history, not the current publication source.
+The private development archive also contains `progressed.py` (Task16W), `old_code.py`, and `my_controller_stable_backup.py`. These are historical materials, not files supplied in this public repository.
 
 ## Current evidence
 
@@ -84,12 +84,12 @@ The documentation environment verified Python syntax but could not launch Webots
 
 These extensions are not requirements for publishing the current work-in-progress repository.
 
-## Version B boundary
+## Separate academic implementation
 
-The `teammate_controller` directories belong to the separate submitted team implementation. They are not dependencies of Fix12 and are excluded from the Version A public repository. The separate `clean_slam` controller family is also outside Version A publication scope.
+The academic teammates' submitted implementation and the separate `clean_slam` working copy are not included in this repository and are not dependencies of the published controller. Their source and provenance remain outside this project's public scope.
 
 ## Redistribution status
 
-The controller is the owner's independent Version A source. The evaluated maze entered the archive with the academic project, contains no license notice, and is discussed by course material that provides no redistribution grant. The referenced Cyberbotics R2025a PROTOs have their own upstream terms, but those terms do not establish ownership of the course maze layout. The present public snapshot is consequently code-only.
+The controller in this repository was independently engineered by its owner. The evaluated maze originated in the academic project and has no established redistribution permission; the referenced Cyberbotics R2025a PROTOs have separate upstream terms that do not authorize distribution of the course maze. This repository consequently distributes code and documentation only.
 
 This restriction also applies to screenshots or maps that visibly reproduce the unapproved maze layout until permission is confirmed.

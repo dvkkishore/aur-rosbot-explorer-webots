@@ -1,6 +1,6 @@
 # Architecture and Code Navigation
 
-This document maps the audited Version A controller at `Maze1/controllers/my_controller/my_controller.py`. Line numbers refer to the `Task22N_Fix12_global_frontier_execution_handoff` working copy with SHA-256 `79bcf4f34876383a0145a4d4975eb582f38a296c4f425af764c9da24b56e8aa7`.
+This document maps the controller at `Maze1/controllers/my_controller/my_controller.py`. Line numbers refer to the published `Task22N_Fix12_global_frontier_execution_handoff` source snapshot with SHA-256 `79bcf4f34876383a0145a4d4975eb582f38a296c4f425af764c9da24b56e8aa7` and may become outdated after future code changes.
 
 ## Structural overview
 
@@ -13,7 +13,7 @@ The file contains three top-level implementation classes:
 | 1805–1885 | `CorrelativeScanMatcher` | LiDAR point extraction and local correlative scan scoring. |
 | 1887–31134 | `MappingController` | Device I/O, state, mapping, semantic perception, mission logic, planning, control, recovery, rendering, and logging. |
 
-`MappingController` has 626 methods. Its size is a maintainability concern, but changing that structure is deliberately outside this publication pass.
+`MappingController` has 626 methods in this snapshot. Its shared state and size are maintainability concerns; the current source has not been modularized.
 
 ## Runtime data flow
 
@@ -81,7 +81,7 @@ An authorized replacement world must provide a compatible Husarion ROSbot device
 
 ## Future modularization opportunities
 
-These are post-publication engineering options, not changes made in this pass:
+The following are potential future engineering tasks, not features implemented in the current source:
 
 1. Extract immutable configuration and robot geometry first, while retaining identical values.
 2. Isolate run logging and rendering because they have clear side-effect boundaries.

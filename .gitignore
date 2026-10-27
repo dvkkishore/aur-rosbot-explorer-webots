@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Webots-generated project state and crash files
+*.wbproj
+.*.wbproj
+crash_native.log
+
+# Controller-generated runtime artifacts
+run_logs/
+sensor_debug_log.csv
+saved_map.pkl
+
+# Local logs and editor/OS files
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

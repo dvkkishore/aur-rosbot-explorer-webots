@@ -44,7 +44,7 @@ Implemented does not mean fully validated. Several experimental planners and con
 
 ## Publication scope
 
-This public snapshot contains only the independently developed Version A controller and public project documentation. It does not contain the separate teammates' submission, private development history, academic PDFs, raw run logs, generated maps, or the academic maze worlds.
+This repository contains the independently developed controller and its technical documentation. The separate academic team submission, private development history, course materials, run logs, generated maps, and evaluation worlds are not distributed here.
 
 The world used during development is not included because permission to redistribute the course-provided layout has not been established. This is therefore a **code-only publication**, not a self-contained reproducibility package.
 
@@ -118,7 +118,7 @@ flowchart LR
     E --> O
 ```
 
-Most behavior remains in a single `MappingController` class. The publication pass documents this structure without refactoring it.
+Most behavior remains in a single `MappingController` class. The [architecture guide](docs/ARCHITECTURE.md) maps its responsibilities without implying that the controller has been modularized.
 
 ## Testing and evidence
 
@@ -140,6 +140,6 @@ Because the evaluated maze cannot currently be redistributed, third parties cann
 
 ## Authorship and attribution
 
-Version A is the repository owner's independent architecture and implementation, developed in an academic project context. A separate teammates' submitted implementation exists but is not included or represented by this repository.
+This controller was independently engineered by the repository owner in the context of an academic Autonomous Robots project. A different implementation was submitted by teammates; their work is not included in this repository.
 
-Webots and its referenced robot/assets are provided by Cyberbotics under their respective upstream terms. No project license has been selected for AUR yet; no permission to reuse this source should be inferred beyond rights granted by applicable law.
+The controller targets Cyberbotics Webots and the simulated Husarion ROSbot. The Webots software and referenced robot assets are subject to their respective upstream terms and are not distributed in this code-only repository. No license has been granted for this controller; its public availability does not by itself authorize reuse, modification, or redistribution beyond applicable legal rights.

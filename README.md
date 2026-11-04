@@ -13,6 +13,12 @@ LiDAR occupancy mapping · RGB-D semantic perception · frontier exploration · 
 > [!IMPORTANT]
 > AUR is published as engineering work in progress. The current controller can initialize, map, plan, move, replan, and log its behavior, but it has not demonstrated reliable mission completion. Historical successful runs belong to older revisions and are not validation of the published controller.
 
+<div align="center">
+  <img src="docs/assets/aur-webots-mapping-session.png" width="100%" alt="Webots simulation view beside the AUR controller's live occupancy and navigation visualization">
+  <br>
+  <sub>Recorded Webots session showing the simulated environment, onboard camera views, and the controller's live map display. This documents integrated sensing and visualization, not successful mission completion.</sub>
+</div>
+
 ## System overview
 
 AUR connects perception, mapping, exploration, planning, and control in one Python controller. The simulated robot builds a sparse occupancy map from LiDAR, adds semantic evidence from RGB-D observations, selects exploration or mission goals, plans footprint-aware paths, and passes motion commands through live safety and recovery logic.
@@ -61,9 +67,15 @@ Implemented source is not the same as validated performance. Experimental ESDF o
 
 ## Visual evidence
 
-The original academic Webots world is not distributed because permission to republish its layout has not been established. For the same reason, screenshots and generated maps that reveal that layout are intentionally excluded from this public snapshot.
+The screenshots are published with the project owner's permission. They come from the academic evaluation environment, but the exact controller revision and run could not be confirmed from the image files alone; the captions therefore remain deliberately neutral. The underlying Webots world is not distributed.
 
-When publication-safe visuals become available, this section will present them beside the subsystem they document and identify the controller revision, world, and run where that provenance is known. A plotted path or map view will be described as an observed artifact—not as proof of mission success.
+<div align="center">
+  <img src="docs/assets/aur-rosbot-yellow-landmark.png" width="620" alt="Overhead Webots view of the simulated ROSbot beside a yellow cylindrical landmark in the maze environment">
+  <br>
+  <sub>Overhead simulation view of the ROSbot near a yellow cylindrical landmark. The image provides environment and target context; it does not establish detection, approach completion, or mission success.</sub>
+</div>
+
+The featured image above combines the Webots environment view with onboard camera panels and the controller's occupancy/navigation display. Its visible map and overlays are treated as observed runtime artifacts rather than a validated trajectory or performance result.
 
 ## How the autonomy loop runs
 
@@ -97,6 +109,9 @@ The selected implementation is intentionally preserved as a single controller fi
 │       └── my_controller/
 │           └── my_controller.py
 └── docs/
+    ├── assets/
+    │   ├── aur-rosbot-yellow-landmark.png
+    │   └── aur-webots-mapping-session.png
     ├── ARCHITECTURE.md
     ├── ALGORITHMS.md
     └── DEVELOPMENT_STATUS.md

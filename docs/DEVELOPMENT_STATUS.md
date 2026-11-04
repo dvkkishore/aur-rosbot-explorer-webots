@@ -92,4 +92,4 @@ The academic teammates' submitted implementation and the separate `clean_slam` w
 
 The controller in this repository was independently engineered by its owner. The evaluated maze originated in the academic project and has no established redistribution permission; the referenced Cyberbotics R2025a PROTOs have separate upstream terms that do not authorize distribution of the course maze. This repository consequently distributes code and documentation only.
 
-This restriction also applies to screenshots or maps that visibly reproduce the unapproved maze layout until permission is confirmed.
+The two screenshots in `docs/assets/` are included with explicit publication approval from the project owner. They are observational artifacts only: their inclusion does not grant redistribution rights for the underlying Webots world or establish the performance of the pictured controller run.

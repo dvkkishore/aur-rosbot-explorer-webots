@@ -4,7 +4,7 @@ This document maps the controller at `Maze1/controllers/my_controller/my_control
 
 ## Structural overview
 
-The file contains three top-level implementation classes:
+The file contains one helper class, two focused subsystem classes, and the main controller class:
 
 | Lines | Symbol | Responsibility |
 |---:|---|---|

@@ -4,7 +4,7 @@ This document describes the controller published in this repository (identifier:
 
 ## Localization
 
-The pose update combines differential-drive wheel odometry with an external heading source. In the audited Maze 1 run, GPS was unavailable, IMU zeroed yaw was the primary heading, compass XY was a fallback, and odometry was the final fallback.
+The pose update combines differential-drive wheel odometry with an external heading source. In the recorded Maze 1 run, GPS was unavailable, IMU zeroed yaw was the primary heading, compass XY was a fallback, and odometry was the final fallback.
 
 `CorrelativeScanMatcher` samples LiDAR endpoints and searches a local pose window against an occupancy score table. The selected configuration sets `SCAN_MATCH_APPLY_TO_POSE = False`, so scan matching participates in diagnostics and map-update gating rather than serving as the authoritative pose correction. Run summaries include legacy “applied” counters; those counters must not be interpreted as nonzero physical pose corrections without inspecting the recorded correction values and configuration.
 

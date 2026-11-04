@@ -55,7 +55,7 @@ The documentation environment verified Python syntax but could not launch Webots
 
 ### Critical for a reproducible release
 
-- Commit or otherwise freeze the exact selected Fix12 source and record its hash.
+- Keep the published Fix12 source revision and hash tied to its experiment evidence; freeze the evaluation configuration and stopping conditions for reproducible runs.
 - Obtain written permission to redistribute the evaluated `Maze1.wbt`, or create and validate an independently authored replacement world.
 - Replay the controller/world pair in Webots R2025a and verify controller/device resolution.
 - Package a small, immutable Fix12 evidence set; do not publish multi-gigabyte raw logs by default.
